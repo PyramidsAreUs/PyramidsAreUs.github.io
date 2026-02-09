@@ -1,0 +1,80 @@
+/*
+#3891a6 Cyan
+#4c5b5c Grey
+#fde74c yellow
+#db5461 redish pink
+#e3655b coral red
+*/
+body {
+    background-color: #4c5b5c;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #4c5b5c;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #fde74c;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: underline;
+  font-size: 23px;
+  width: 5%;
+  border-radius: 6%;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #e3655b;
+  color: #fde74c;
+}
+
+h1 {
+    font-size: 50px;
+    color: #fde74c;
+    text-align: center;
+}
+h2{
+    font-size: 35px;
+    color: #fde74c;
+    text-align: center;
+    text-decoration: underline;
+}
+p{
+    font-size: 20px;
+    color: #fde74c;
+    text-align: center;
+}
+img{
+    scale: 1.5;
+    display: block;
+    margin: auto;
+    width: 10%;
+    border-radius: 10%;
+}
+iframe{
+    display: block;
+    margin: auto;
+}
+.title{
+    display: block;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.mainText{
+    display: block;
+    width: fit-content;
+    /*
+    border-radius: 3%;
+    border: 5px solid #fde74c;
+    */
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
