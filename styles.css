@@ -50,6 +50,16 @@ p{
     color: #fde74c;
     text-align: center;
 }
+form{
+    font-size: 20px;
+    color: #fde74c;
+    text-align: center;
+}
+label{
+    font-size: 20px;
+    color: #fde74c;
+    text-align: center;
+}
 img{
     scale: 2;
     display: block;
@@ -79,6 +89,7 @@ iframe{
     margin-right: auto;
 
 }
+
 
 
 
