@@ -53,6 +53,7 @@ p{
 img{
     scale: 2;
     display: block;
+    padding: 30px 30px;
     margin: auto;
     width: 10%;
     border-radius: 10%;
@@ -79,4 +80,5 @@ iframe{
     margin-right: auto;
 
 }
+
 
