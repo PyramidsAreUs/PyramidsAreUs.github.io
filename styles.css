@@ -91,7 +91,7 @@ iframe{
 
 }
 .sellerIMG{
-    scale: 1;
+    scale: 0.5;
     display: block;
     margin: auto;
     padding: 30px 30px;
