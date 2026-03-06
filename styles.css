@@ -90,6 +90,14 @@ iframe{
     margin-right: auto;
 
 }
+.sellerIMG{
+    scale: 1;
+    display: block;
+    margin: auto;
+    padding: 30px 30px;
+    width: 10%;
+    border-radius: 10%;
+}
 
 
 
