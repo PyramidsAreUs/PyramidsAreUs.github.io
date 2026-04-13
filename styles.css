@@ -61,7 +61,7 @@ label{
     text-align: center;
 }
 img{
-    scale: 2;
+    scale: 1;
     display: block;
     margin: auto;
     padding: 30px 30px;
@@ -92,7 +92,7 @@ iframe{
 
 }
 .sellerIMG{
-    scale: 4;
+    scale: 1;
     display: block;
     margin: auto;
     padding: 30px 30px;
