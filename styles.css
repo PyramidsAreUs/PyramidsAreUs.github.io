@@ -61,11 +61,11 @@ label{
     text-align: center;
 }
 img{
-    scale: auto;
+    scale: 2;
     display: block;
     margin: auto;
     padding: 30px 30px;
-    width: 10%;
+    width: 100%;
     border-radius: 10%;
 }
 iframe{
@@ -91,11 +91,11 @@ iframe{
 
 }
 .sellerIMG{
-    scale: auto;
+    scale: 4;
     display: block;
     margin: auto;
     padding: 30px 30px;
-    width: 10%;
+    width: 50%;
     border-radius: 10%;
 }
 
