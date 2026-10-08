@@ -10,6 +10,7 @@ submitBtn.addEventListener("click", function(){
     var data = {
         fName.value:message.value,
     }
+    document.getElementById("textAppear").textContent = "The Almighty Gregor will not be satisfied with this message.\nContact us some other way...";
 })
 
 import fs from 'fs'
