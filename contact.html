@@ -4,8 +4,37 @@
 <head>
     <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
-    <link rel="icon" type="image/x-icon" href="images/pyramid.png">
+    <link rel="icon" type="image/x-icon" href="assets/pyramid.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script>
+    (function () {
+        emailjs.init("Ix60zhENyO1JFr0gZ");
+    })();
+    </script>
+    <script>
+    function sendMail(event) {
+        event.preventDefault();
+        emailjs
+        .sendForm(
+            "service_wq13sqn",
+            "template_hyrxum5",
+            event.target
+        )
+        .then(
+            function () {
+            alert("Message sent successfully!");
+            event.target.reset();
+            },
+            function (error) {
+            alert("Failed to send message");
+            console.error(error);
+            }
+        );
+    }
+    </script>
+
     <title>PyramidsAreUs</title>
 </head>
 
@@ -21,16 +50,10 @@
     </div>
 
     <div class="mainText">
-    <form>
-        <label for="fName">Full Name:</label>
-        <input type="text" id="fName" name="fName"></input>
-        <br>
-        <label for="message">Message:</label>
-        <input type="text" id="message" name="message"></input>
-        <br>
-        <button onClick="textAppear()">Submit</button>
-        <br>
-        <div id="textAppear"></div>
+    <form onsubmit="sendMail(event)">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
     </form>
     </div>
     <footer class="mainText">
