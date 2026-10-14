@@ -102,6 +102,26 @@ iframe{
     border-radius: 10%;
 }
 
+#countdown-timer {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #fde74c;
+}
 
+.timer-container {
+    text-align: center;
+    background: #4c5b5c;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
 
-
+.time-block {
+    display: inline-block;
+    min-width: 70px;
+}
+.label {
+    font-size: 1rem;
+    color: #fde74c;
+    display: block;
+}

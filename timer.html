@@ -23,36 +23,17 @@
         <br>
     </div>
 
-    <div id="countdown-timer">
-        <span id="days">00</span>d 
-        <span id="hours">00</span>h 
-        <span id="minutes">00</span>m 
-        <span id="seconds">00</span>s
+    <div class="timer-container">
+        <h1>Coming Soon</h1>
+        <div id="countdown-timer">
+            <span class="time-block"><span id="days">00</span><span class="label">Days</span></span>
+            <span class="time-block"><span id="hours">00</span><span class="label">Hours</span></span>
+            <span class="time-block"><span id="minutes">00</span><span class="label">Mins</span></span>
+            <span class="time-block"><span id="seconds">00</span><span class="label">Secs</span></span>
+        </div>
     </div>
 
-    <script>
-        const targetDate = new Date("2027-6-18T12:00:00").getTime();
-
-        const timer = setInterval(function() {
-            const now = new Date().getTime();
-            const distance = targetDate - now;
-
-            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-            document.getElementById("days").innerText = days;
-            document.getElementById("hours").innerText = hours;
-            document.getElementById("minutes").innerText = minutes;
-            document.getElementById("seconds").innerText = seconds;
-
-            if (distance < 0) {
-                clearInterval(timer);
-                document.getElementById("countdown-timer").innerHTML = "EXPIRED";
-            }
-        }, 1000);
-    </script>
+    <script src="countDown.js"></script>
 
     <br><br>
 
