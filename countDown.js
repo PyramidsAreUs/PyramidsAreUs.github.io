@@ -1,4 +1,4 @@
-const targetDate = new Date("2027-6-18T12:00:00").getTime();
+const targetDate = new Date("2027-18-6T12:00:00").getTime();
 
 const timer = setInterval(function() {
     const now = new Date().getTime();
@@ -19,6 +19,6 @@ const timer = setInterval(function() {
     // If the countdown is finished, display a message
     if (distance < 0) {
         clearInterval(timer);
-        document.getElementById("countdown-timer").innerHTML = "<h2>We are Live!</h2>";
+        document.getElementById("countdown-timer").innerHTML = "<h2>Something is coming...</h2>";
     }
 }, 1000);

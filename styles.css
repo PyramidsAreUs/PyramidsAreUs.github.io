@@ -103,6 +103,7 @@ iframe{
 }
 
 #countdown-timer {
+    text-align: center;
     font-size: 2.5rem;
     font-weight: bold;
     color: #fde74c;
@@ -117,10 +118,12 @@ iframe{
 }
 
 .time-block {
+    text-align: center;
     display: inline-block;
     min-width: 70px;
 }
 .label {
+    text-align: center;
     font-size: 1rem;
     color: #fde74c;
     display: block;
