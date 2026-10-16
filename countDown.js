@@ -10,11 +10,11 @@ const timer = setInterval(function() {
     const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-    // Output the results to the HTML elements
-    document.getElementById("days").innerText = String(days).padStart(2, '0');
-    document.getElementById("hours").innerText = String(hours).padStart(2, '0');
-    document.getElementById("minutes").innerText = String(minutes).padStart(2, '0');
-    document.getElementById("seconds").innerText = String(seconds).padStart(2, '0');
+    // Output the results to the HTML elements         .padStart(2, '0')
+    document.getElementById("days").innerText = String(days);
+    document.getElementById("hours").innerText = String(hours);
+    document.getElementById("minutes").innerText = String(minutes);
+    document.getElementById("seconds").innerText = String(seconds);
 
     // If the countdown is finished, display a message
     if (distance < 0) {
